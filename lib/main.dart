@@ -10,7 +10,7 @@ void main() {
   DioHelper.init();
 
   runApp(BlocProvider(
-    create: (context) => HomeCubit()..getWeatherWithCityName(cityName: "Mansoura")..getWeatherWithCLangLat(lat: "31.0876", long: "31.595"),
+    create: (context) => HomeCubit()..getWeatherWithCityName(cityName: "cairo")..getWeatherWithCLangLat(lat: "31.0876", long: "31.595"),
     child: BlocConsumer<HomeCubit,HomeStates>(
       listener: (context, state) {},
       builder: (context, state) {
